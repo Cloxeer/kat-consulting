@@ -135,6 +135,7 @@
 
 /* Colour, used as a few big moves: a butter sun behind the hero photos, and the teal band rising in one curve. */
 .hero-art::before { top: -6%; right: -10%; width: 96%; opacity: 1; }
+@media (max-width: 899px) { .hero-art::before { top: -5%; right: 0; width: 84%; } }
 .kathleen { overflow: hidden; border-radius: 50% 50% 0 0 / var(--s-9) var(--s-9) 0 0; padding-top: calc(var(--section) + var(--s-6)); }
 @media (max-width: 899px) { .kathleen { border-radius: 50% 50% 0 0 / var(--s-7) var(--s-7) 0 0; } }
 
