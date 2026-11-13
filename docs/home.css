@@ -1,0 +1,171 @@
+/* Kat Consulting — home page layout. Uses the tokens from kat.css. */
+
+/* Mission opening: hero */
+.hero { padding-block: var(--s-9); overflow-x: clip; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--s-8); align-items: center; }
+.hero .eyebrow { display: flex; align-items: center; gap: var(--s-2); }
+.hero .eyebrow .heart { color: var(--accent); width: 28px; height: 26px; }
+.hero h1 { font-size: var(--h1); margin-top: var(--s-3); }
+.hero .lead { margin-top: var(--s-5); }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3) var(--s-6); margin-top: var(--s-6); }
+.hero-art { position: relative; isolation: isolate; padding: var(--s-3) var(--s-3) var(--s-8) var(--s-8); }
+.hero-art::before { content: ""; position: absolute; top: 0; right: 0; width: 60%; aspect-ratio: 1; border-radius: 50%; background: var(--butter); opacity: 0.5; z-index: -1; }
+.hero-main { --tilt: 2.5deg; margin: 0; padding-bottom: var(--s-5); }
+.hero-main img { aspect-ratio: 4 / 5; object-position: 82% 30%; }
+.hero-inset { --tilt: -5deg; --tape: 4deg; position: absolute; left: 0; bottom: 0; width: 44%; margin: 0; padding: var(--s-2); }
+.hero-inset img { aspect-ratio: 1; }
+
+/* Services */
+.section-head { max-width: 640px; margin-bottom: var(--s-8); }
+.section-head h2 { font-size: var(--h2); margin-top: var(--s-2); }
+.section-head .lead { margin-top: var(--s-4); }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-7) var(--s-6); }
+.service { display: flex; flex-direction: column; }
+.service .print { padding: var(--s-2); margin: 0 var(--s-2); }
+.service .print img { aspect-ratio: 4 / 3; }
+.service .num { margin-top: var(--s-5); font: 600 var(--t-31)/1 var(--font-hand); color: var(--accent-ink); }
+.service h3 { font: 400 var(--t-25)/1.2 var(--font-display); margin-top: var(--s-2); flex: 1; }
+.service .text-link { margin-top: var(--s-3); }
+.service-custom { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: var(--s-6); background: var(--cream); border-radius: var(--radius-lg); padding: var(--s-6) var(--s-7); }
+.service-custom h3 { font: 400 var(--t-25)/1.2 var(--font-display); }
+.service-custom p { color: var(--muted); margin-top: var(--s-2); max-width: 56ch; }
+
+/* Meet Kathleen */
+.kathleen { background: var(--teal); color: var(--on-dark); }
+.kathleen-grid { display: grid; grid-template-columns: 0.9fr 1fr; gap: var(--s-9); align-items: center; }
+.kathleen-photo { --tilt: -2.5deg; margin: 0; max-width: 440px; padding-bottom: var(--s-5); }
+.kathleen-photo img { aspect-ratio: 4 / 5; object-position: 22% 50%; }
+.kathleen .eyebrow { color: var(--butter); }
+.kathleen h2 { font-size: var(--h2); margin-top: var(--s-2); }
+.kathleen .role { font: 600 var(--t-25)/1.2 var(--font-hand); color: var(--butter); margin-top: var(--s-2); }
+.kathleen .lead { color: var(--on-dark-muted); margin-top: var(--s-5); }
+.chips { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-top: var(--s-5); }
+.chips li { font-size: var(--t-16); font-weight: 600; padding: var(--s-2) var(--s-4); border: 1.5px solid rgba(244, 235, 221, 0.4); border-radius: 999px; }
+.kathleen .text-link { margin-top: var(--s-4); color: var(--on-dark); }
+
+/* Resources + store */
+.tools { background: var(--cream); }
+.tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-6); }
+.tool-card { background: var(--paper); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; }
+.tool-card .photo { aspect-ratio: 16 / 9; overflow: hidden; }
+.tool-card .photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease); }
+.tool-body { padding: var(--s-6); display: flex; flex-direction: column; flex: 1; }
+.tool-body h3 { font: 400 var(--t-31)/1.15 var(--font-display); }
+.tool-body > p { color: var(--muted); margin-top: var(--s-3); }
+.tool-body .text-link { margin-top: auto; padding-top: var(--s-4); }
+.products { margin-top: var(--s-5); border-top: 1px solid var(--line); }
+.product { display: flex; align-items: center; gap: var(--s-4); min-height: 64px; border-bottom: 1px solid var(--line); font-weight: 600; }
+.product::before { content: ""; width: 20px; height: 18px; background: var(--accent); flex: none; -webkit-mask: var(--heart) center / contain no-repeat; mask: var(--heart) center / contain no-repeat; }
+
+/* Contact */
+.cta { position: relative; color: var(--on-dark); background: var(--teal); }
+.cta .wrap { position: relative; }
+.cta h2 { font-size: var(--statement); max-width: 18ch; }
+.cta p { margin-top: var(--s-5); color: var(--on-dark-muted); font-size: var(--t-20); max-width: 52ch; }
+.cta .btn { margin-top: var(--s-6); min-height: 56px; padding: 0 var(--s-6); }
+
+@media (max-width: 899px) {
+  .hero-grid, .kathleen-grid, .tools-grid { grid-template-columns: 1fr; }
+  .hero-grid { gap: var(--s-7); }
+  .kathleen-grid { gap: var(--s-7); }
+  .kathleen-photo { width: min(100%, 440px); margin-inline: auto; }
+  .hero-art { padding-left: var(--s-5); }
+  .service-custom { flex-direction: column; align-items: flex-start; padding: var(--s-5); }
+  .tool-body { padding: var(--s-5); }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tool-card:hover .photo img { transform: scale(1.04); }
+  .heart:hover { animation: beat 0.7s var(--ease) 1; }
+}
+
+.cta .display em { color: var(--butter); background-image: var(--squiggle-light); }
+
+/* Hero birds: a crane soars up across the hero once, then two swallows follow along the top */
+.hero { position: relative; }
+.swallows { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 3; }
+.swallow { position: absolute; left: 0; top: var(--y, 0px); width: var(--w, 96px); will-change: transform; opacity: 0; animation: glide var(--t, 10s) cubic-bezier(0.4, 0.05, 0.55, 0.95) var(--d, 0s) 1 both; }
+@keyframes glide { 0% { transform: translate(106vw, 0) rotate(-5deg); opacity: 0; } 5% { opacity: 1; } 34% { transform: translate(72vw, var(--dy, 24px)) rotate(-2deg); } 66% { transform: translate(34vw, calc(var(--dy, 24px) * -0.4)) rotate(3deg); } 95% { opacity: 1; } 100% { transform: translate(-22vw, var(--dy, 24px)) rotate(6deg); opacity: 0; } }
+/* Flight waits for fonts + hero photo (set by kat.js), so it starts the moment the page is ready */
+.js:not(.birds-go) :is(.crane, .swallow) { animation-play-state: paused; }
+.swallow img { width: 100%; animation: bob 0.62s ease-in-out infinite alternate; filter: drop-shadow(0 8px 10px rgba(30, 43, 40, 0.18)); }
+@keyframes bob { from { translate: 0 -5px; rotate: -1.5deg; } to { translate: 0 5px; rotate: 1.5deg; } }
+
+/* Room for the footer cat below the call to action on narrow screens */
+@media (max-width: 899px) {
+  .cta { padding-bottom: calc(var(--section) + 120px); }
+}
+
+/* The crane: enters low on the right, rises over the photo, and soars out the top, unhurried */
+.crane { position: absolute; left: 0; top: 0; width: clamp(150px, 19vw, 280px); opacity: 0; will-change: transform; animation: soar 10s cubic-bezier(0.38, 0.02, 0.32, 1) 0.15s 1 both; }
+.crane img { width: 100%; filter: drop-shadow(0 16px 20px rgba(30, 43, 40, 0.22)); animation: sway 3.1s ease-in-out infinite alternate; }
+@keyframes sway { from { rotate: -1.8deg; translate: 0 -5px; } to { rotate: 1.8deg; translate: 0 6px; } }
+@keyframes soar {
+  0% { transform: translate(96vw, 66vh) scale(0.55) rotate(2deg); opacity: 0; }
+  3% { opacity: 1; }
+  36% { transform: translate(74vw, 38vh) scale(0.88) rotate(-3deg); }
+  66% { transform: translate(55vw, 6vh) scale(1.04) rotate(3deg); }
+  84% { transform: translate(51vw, -32vh) scale(1.12) rotate(-2deg); opacity: 1; }
+  100% { transform: translate(45vw, -78vh) scale(1.2) rotate(2deg); opacity: 0; }
+}
+
+/* Phones: the text spans the full width, so the crane stays out of the way and the swallows carry the moment */
+@media (max-width: 899px) { .crane { display: none; } }
+
+.cta .wrap { z-index: 1; }
+
+/* Tablet and phone staging */
+@media (max-width: 899px) { .hero-art { max-width: 540px; margin-inline: auto; width: 100%; } }
+@media (max-width: 639px) { .services-grid { grid-template-columns: 1fr; } }
+@media (min-width: 640px) and (max-width: 899px) { .services-grid { gap: var(--s-6) var(--s-4); } .service h3 { font-size: var(--t-20); } .service .print { margin: 0; } }
+
+/* Scroll-triggered flocks across the top of a section: they take off as the section scrolls into view (kat.js adds .is-flying) */
+.section { position: relative; }
+.flock { position: absolute; left: 0; right: 0; top: 0; height: var(--section); pointer-events: none; overflow: hidden; z-index: 1; }
+.flock .swallow { width: calc(var(--w, 96px) * 1.35); animation-duration: calc(var(--t, 10s) * 0.75); animation-delay: calc(var(--d, 0s) * 0.5); }
+.flock:not(.rtl) .swallow { animation-name: glide-r; }
+.flock:not(.rtl) .swallow img { transform: scaleX(-1); }
+.js .flock:not(.is-flying) .swallow { animation-play-state: paused; }
+@keyframes glide-r { 0% { transform: translate(-22vw, 0) rotate(5deg); opacity: 0; } 5% { opacity: 1; } 34% { transform: translate(28vw, var(--dy, 24px)) rotate(2deg); } 66% { transform: translate(66vw, calc(var(--dy, 24px) * -0.4)) rotate(-3deg); } 95% { opacity: 1; } 100% { transform: translate(106vw, var(--dy, 24px)) rotate(-6deg); opacity: 0; } }
+
+/* Raw fluorite cluster (CC0 photo by Hiroaki Kikuchi, Wikimedia Commons), cut out like the other art: it rests on the Meet Kathleen print. */
+.print .stone { position: absolute; height: auto; object-fit: contain; border-radius: 0; pointer-events: none; filter: drop-shadow(0 14px 18px rgba(0, 0, 0, 0.38)); }
+.print .stone-green { width: 52%; right: -25%; bottom: -10%; rotate: 5deg; z-index: 2; }
+@media (max-width: 899px) { .print .stone-green { width: 40%; right: -2%; bottom: -9%; } }
+
+/* Colour, used as a few big moves: a butter sun behind the hero photos, and the teal band rising in one curve. */
+.hero-art::before { top: -6%; right: -10%; width: 96%; opacity: 1; }
+.kathleen { overflow: hidden; border-radius: 50% 50% 0 0 / var(--s-9) var(--s-9) 0 0; padding-top: calc(var(--section) + var(--s-6)); }
+@media (max-width: 899px) { .kathleen { border-radius: 50% 50% 0 0 / var(--s-7) var(--s-7) 0 0; } }
+
+/* Services: three prints pinned up by hand, not a grid of matching cards. */
+.service:nth-child(1) .print { --tilt: -2deg; }
+.service:nth-child(2) .print { --tilt: 1.5deg; }
+.service:nth-child(3) .print { --tilt: -1deg; }
+.service .num { color: var(--teal); }
+@media (min-width: 900px) { .service:nth-child(2) { margin-top: var(--s-7); } .service:nth-child(3) { margin-top: var(--s-5); } }
+
+.service-custom .text-link { flex: none; }
+
+/* Whole card is the link (Fitts: a big target beats a small one). The visible label stays; its ::before stretches over the card. */
+.service, .service-custom, .tool-card { position: relative; }
+:is(.service, .service-custom, .tool-card) .text-link::before { content: ""; position: absolute; inset: 0; z-index: 2; border-radius: var(--radius); }
+:is(.service, .service-custom, .tool-card) .text-link:focus-visible { outline: none; }
+:is(.service, .service-custom, .tool-card) .text-link:focus-visible::before { outline: 3px solid var(--accent); outline-offset: var(--s-1); }
+
+/* One hover pattern for every card: it lifts, its title turns rust, and its arrow chip turns rust and steps forward (the chip part lives in kat.css). */
+:is(.service, .service-custom, .tool-card) h3 { transition: color 0.2s var(--ease); }
+.service-custom, .tool-card { transition: translate 0.3s var(--ease), box-shadow 0.3s var(--ease), background-color 0.2s var(--ease); }
+@media (hover: hover) and (pointer: fine) {
+  :is(.service, .service-custom, .tool-card):hover h3 { color: var(--accent-ink); }
+  .service:hover .print { --tilt: 0deg; scale: 1.05; box-shadow: 0 2px 4px rgba(30, 43, 40, 0.16), 0 24px 48px rgba(30, 43, 40, 0.22); }
+  :is(.service-custom, .tool-card):hover { translate: 0 calc(var(--s-2) * -1); box-shadow: 0 2px 4px rgba(30, 43, 40, 0.1), 0 24px 48px rgba(30, 43, 40, 0.16); }
+  .service-custom:hover { background: var(--butter); }
+}
+:is(.service, .service-custom, .tool-card):active { scale: 0.99; }
+
+/* The butter sun returns beside the Services heading, with a swallow crossing it, so the hero shape is a repeated motif and the heading is not left beside empty space. */
+@media (min-width: 900px) {
+  #services > .wrap::before { content: ""; position: absolute; z-index: -1; top: 0; right: calc(var(--gutter) + var(--s-8)); width: clamp(220px, 22vw, 300px); aspect-ratio: 1; border-radius: 50%; background: var(--butter); }
+  #services > .wrap::after { content: ""; position: absolute; top: var(--s-9); right: calc(var(--gutter) + var(--s-6)); width: clamp(180px, 18vw, 250px); aspect-ratio: 560 / 156; background: url("./images/art/swallow-a.webp") center / contain no-repeat; rotate: -6deg; pointer-events: none; }
+}

@@ -1,0 +1,504 @@
+identity:
+  id: ws_kat-consulting_h4w7bn
+  slug: kat-consulting
+  displayName: Kat Consulting
+project:
+  version: 2
+  projectType: web-developer
+  sections:
+    - nav
+    - hero
+    - footer
+  pages:
+    - id: home
+      label: Home
+      path: index.html
+      sections:
+        - nav
+        - hero
+        - footer
+  templateVariant: default
+site:
+  type: web-developer
+  meta:
+    title: Kat Consulting | Effective Instruction. Meaningful Learning. Endless
+      Possibilities.
+    description: I came to education believing it could change lives and
+      communities. Kat Consulting offers professional development, instructional
+      coaching, leadership support, and customized training for schools and
+      districts.
+  theme:
+    fontDisplay: Fraunces
+    fontBody: Source Sans 3
+    colorText: oklch(0.22 0.01 50)
+    colorMuted: oklch(0.52 0.02 50)
+    colorAccent: oklch(0.63 0.09 48)
+    colorBackground: oklch(0.995 0.004 90)
+    colorSurface: oklch(0.97 0.012 85)
+  brand:
+    name: Kat Consulting
+    namePrimary: Kat
+    nameAccent: Consulting
+    location: ""
+    email: ""
+    phone: ""
+    phoneTel: ""
+    foundedYear: ""
+    currentYear: "2026"
+    legalName: Kat Consulting
+    founderNote: ""
+  assets:
+    logo: images/halite/logo.svg
+    hero: images/halite/hero.png
+    getCampusGig: images/halite/getcampusgig.png
+    whatYourVibe: images/halite/whatyourvibe.png
+  nav:
+    links: []
+    applyCta:
+      label: Contact me
+      href: contact/index.html
+    mobileApplyCta:
+      label: Contact me
+      href: contact/index.html
+  hero:
+    eyebrow: My Mission & Vision
+    headline: I came to education believing it could
+    headlineAccent: change lives and communities.
+    body: I wanted students to ask questions, think critically, understand the world
+      around them and know they could shape it.
+    primaryCta:
+      label: Schedule an initial conversation
+      href: contact/index.html
+    image: images/hero-main.webp
+    imageAlt: An educator leading a planning session at a whiteboard
+  valueProps:
+    - title: Be more visible online
+    - title: Convert more website visitors
+    - title: Grow your business today
+  services:
+    title: What does your business need help with?
+    showTitle: true
+    showFooterCta: false
+    footerCta:
+      label: Let's chat about your business needs
+      href: /apply
+    cards:
+      - id: cost
+        prompt: I can't afford to wait
+        emphasis: months for a website.
+        icon: Rocket
+        serviceTitle: Single-Page Sites at Your Pace
+        body: Most agencies stretch builds across weeks of meetings and revisions. For
+          our single-page sites, once you send your photos, wording, and logo,
+          we work at your pace—not a rigid countdown. Need something live
+          quickly? We'll move fast. Want time to review? No rush. Multi-page
+          sites work the same way; we'll give you a clear timeline up front.
+        href: /pricing
+        cta: See starting prices
+      - id: wordpress
+        prompt: I'm worried about
+        emphasis: WordPress getting hacked.
+        icon: ShieldAlert
+        serviceTitle: Hardened Static Architecture
+        body: WordPress sites expose admin panels that bots hammer 24/7. Plugin stacks
+          slow you down and break without warning. Halite builds compile to fast
+          static assets with no /wp-admin to attack—clean, secure infrastructure
+          you actually own.
+        href: /services#framework
+        cta: See how we build
+      - id: facebook
+        prompt: My business only has a
+        emphasis: Facebook page.
+        icon: Globe
+        serviceTitle: Own Your Digital Real Estate
+        body: Social platforms are rented land. Algorithms shift, pages get locked, and
+          your competitors' paid ads show up right on your profile. A Halite
+          site is permanent infrastructure on a domain you control—no
+          distractions, no landlord.
+        href: /services#why
+        cta: See why ownership matters
+      - id: mobile
+        prompt: Most customers find me
+        emphasis: on their phone.
+        icon: Zap
+        serviceTitle: Mobile-First Local Discovery
+        body: Over 53% of local business discovery happens on mobile and map apps. If
+          your site takes more than three seconds on cellular data, buyers
+          bounce to the next result. We engineer for instant delivery,
+          click-to-call, and directions routing.
+        href: /services#framework
+        cta: Explore the Halite method
+      - id: pricing
+        prompt: I don't know what
+        emphasis: a website should cost.
+        icon: Search
+        serviceTitle: Transparent Starting Prices
+        body: Quotes shouldn't feel like a mystery. We publish clear prices—from a
+          single-page site to a full multi-page website—plus monthly payment
+          options if you'd rather spread out the cost. Founding beta rates are
+          available now.
+        href: /pricing
+        cta: View pricing tiers
+      - id: apply
+        prompt: I'm ready to
+        emphasis: get started.
+        icon: MessageCircle
+        serviceTitle: Let's Talk About Your Project
+        body: We partner with local owners who take their digital presence seriously.
+          Share a few details and we'll schedule a focused discovery call—no
+          hard sell, just a clear path from where you are to where you need to
+          be.
+        href: /apply
+        cta: Let's chat
+  confrontation:
+    eyebrow: The real cost
+    title: These are the problems that quietly cost local businesses customers.
+    cards:
+      - title: Rented space, zero ownership
+        body: When your business home lives on Facebook or Instagram, you don't own the
+          land. Platforms change rules overnight, lock accounts without warning,
+          and surround your customers with ads for your direct competitors.
+          Halite builds permanent digital real estate that belongs exclusively
+          to you.
+      - title: The three-second bounce
+        body: More than half of local discovery happens on mobile and mapping apps. If
+          your site crawls over cellular data, high-intent buyers tap the next
+          result. We build sites that load quickly on phones—with easy
+          tap-to-call and directions buttons built in.
+      - title: The Google blindspot
+        body: Customers ready to purchase search Google before they scroll social feeds.
+          If your brand only exists inside a closed social environment, you're
+          invisible to active local demand. We place your business exactly where
+          buyers are already looking.
+  framework:
+    eyebrow: The Halite Method
+    title: Curated structure. Your brand execution.
+    paragraphs:
+      - "We don't waste months coding from a blank page, and we don't install
+        slow drag-and-drop page builders. Halite starts from proprietary
+        structural frameworks—battle-tested layouts refined across dozens of
+        local builds—then wraps them completely around your brand: your colors,
+        photography, copy, and conversion goals."
+      - The result is Next.js and Astro-class performance with Supabase-ready
+        architecture when you need a data layer. No exposed admin panels for
+        bots to target. No plugin roulette. Just a site that looks bespoke,
+        loads dramatically faster than WordPress, and ships in a fraction of
+        typical timelines.
+    emphasis: That's how we deliver elite-quality sites at founding beta rates
+      starting at $750—not by cutting corners, but by building smarter.
+  localBusinessCta:
+    title: Are you a local business?
+    body: A short discovery call to map where you are today and what a static site
+      should do for you—clear scope, honest pricing, no sales pitch.
+    cta: Let's chat about your business needs
+    href: /apply
+  portfolio:
+    eyebrow: Portfolio
+    title: Want to see what we're made of?
+    subtitle: Here are production applications we have shipped.
+    body: Halite WebDev is a student-founded studio (est. 2026) building production
+      static web applications—not drag-and-drop templates—for owners who want
+      speed, control, and a professional edge.
+    projects:
+      - name: WhatsYourVibe.org
+        description: A creator collaboration platform where builders showcase projects,
+          discover collaborators, and ship in the open—built as a fast, modern
+          web application with search, profiles, and community discovery.
+        image: images/halite/whatyourvibe.png
+        href: https://whatyourvibe.org
+        tags:
+          - Community Platform
+          - Next.js
+          - Static-First Architecture
+        imageFirst: true
+      - name: GetCampusGig.com
+        description: A verified student-to-student gig marketplace for NMSU—post
+          errands, accept tasks, and build campus reputation with a focused,
+          mobile-ready experience built for real local use.
+        image: images/halite/getcampusgig.png
+        href: https://getcampusgig.com
+        tags:
+          - Marketplace
+          - React
+          - Campus-Verified Access
+        imageFirst: false
+  workflow:
+    eyebrow: How we work
+    title: From discovery to launch in three deliberate phases.
+    steps:
+      - step: "01"
+        title: The 10-Minute Discovery Sync
+        description: We audit your current digital footprint, evaluate local
+          competition, and map a clean structural scope. No sales pitch—just
+          strategy.
+      - step: "02"
+        title: The Crystalline Build Phase
+        description: We compile your imagery, targeted sales copy, and localization data
+          into our ultra-secure static framework engines.
+      - step: "03"
+        title: Domain Migration & Launch
+        description: We help you configure secure domain ownership, point live traffic
+          to global CDN delivery, and hand you infrastructure you control.
+  differentiators:
+    title: We're not your typical website designer.
+    body: Halite WebDev is a student-founded studio building production static sites
+      for local businesses. We combine agency-quality structure with the direct
+      communication and accountability of working with the person who actually
+      writes your code.
+    link:
+      label: Learn more about our process
+      href: /process
+    items:
+      - title: Talk to real humans
+        body: No ticket queues or offshore call centers. You work directly with the
+          builder—clear answers, honest timelines, and real accountability.
+        icon: Users
+      - title: You matter to us
+        body: We're a student-founded studio, not a volume agency. Every project gets
+          focused attention because your reputation is ours too.
+        icon: Heart
+      - title: Don't worry, it's simple
+        body: Three deliberate phases—from discovery to launch. We handle the technical
+          heavy lifting so you can stay focused on running your business.
+        icon: CheckCircle
+      - title: Everything you need to succeed
+        body: Design, performance, SEO foundations, and launch support in one cohesive
+          build. No plugin patchwork or surprise upsells.
+        icon: Layers
+  pricing:
+    eyebrow: Pricing
+    title: Clear starting prices
+    description: Straightforward options for restaurants, tattoo shops, salons, and
+      local service businesses across Las Cruces, Albuquerque, Santa Fe, and El
+      Paso. Every project starts with a free Zoom call—we confirm scope and
+      price in writing before work begins.
+    betaBadge: Founding Rate — Limited Spots
+    billingToggleOnetime: Pay once
+    billingToggleMonthly: Pay monthly
+    upfrontHeading: Website build — pay once, you own it
+    upfrontPlans:
+      - id: mono
+        name: Single-Page Site
+        description: One polished static page for tattoo studios, cafes, and solo shops.
+          Gallery or menu section, your story, contact form—you register your
+          domain and share DNS access so we can connect it at launch.
+        price: $1,095
+        betaPrice: $750
+        priceSuffix: one-time
+        features:
+          - One professional page with gallery or menu section
+          - Contact form that emails you directly
+          - Domain DNS connection once you share registrar access (you register
+            the domain)
+          - Google-ready titles and descriptions
+          - Complete site files plus written hosting instructions
+        cta:
+          label: Start with a single-page site
+          href: /apply
+        highlighted: false
+      - id: multi
+        name: Multi-Page Site
+        description: A full 4–6 page site for restaurants and shops that need a menu,
+          gallery, about page, and contact—more room than a single scroll page.
+        price: $1,650
+        betaPrice: $1,250
+        priceSuffix: one-time
+        features:
+          - 4–6 pages customized to your business
+          - Full menu, portfolio, or gallery section
+          - About page and contact page
+          - Domain DNS connection once you share registrar access (you register
+            the domain)
+          - Google Search Console setup at launch
+        cta:
+          label: Start with a multi-page site
+          href: /apply
+        highlighted: true
+    handoffHeading: After launch — your site files & ongoing care
+    handoffIntro: Every project includes your finished site, domain connection at
+      launch, and a ZIP of your files with written instructions. Choose how much
+      live help you want after go-live—you can decide on the launch call.
+    handoffOptions:
+      - id: diy
+        name: DIY Handoff
+        description: Your site files and written instructions—no live session. You
+          register the domain in your name; we connect DNS at launch.
+        price: Free
+        priceSuffix: ""
+        features:
+          - Complete site ZIP plus written redeploy and hosting instructions
+          - You purchase and own the domain—we connect DNS at launch
+          - Static HTML—no WordPress; any developer can host the ZIP elsewhere
+          - No monthly subscription required
+        highlighted: false
+      - id: walkthrough
+        name: Walkthrough Handoff
+        description: Everything in DIY Handoff, plus a live 1-hour Zoom to walk through
+          your domain, hosting, and site files.
+        price: $60
+        priceSuffix: one-time
+        features:
+          - 1-hour live Zoom after launch
+          - Domain, hosting, and file export walkthrough
+          - Complete site ZIP plus written instructions included
+          - Ask questions in real time—recorded if you want
+          - No monthly subscription required
+        highlighted: false
+      - id: managed
+        name: Halite Care
+        description: Same static site—you still register the domain in your name. We
+          host it, connect DNS when you share access, and update content when
+          you reach out.
+        price: $150
+        priceSuffix: / month
+        features:
+          - You purchase and own the domain; we configure DNS with your access
+          - We host your static site—not WordPress, nothing to log into
+          - SSL, security monitoring, and backups included
+          - Menu, hours, and photo updates when you email or text
+          - If you leave, we provide your site ZIP and handoff notes
+        highlighted: true
+    handoffNote: Registrars require the business owner (you) to purchase and hold
+      the domain—Halite does not buy domains on your behalf or take legal
+      ownership. A .com is usually about $12–$15 per year, paid directly to
+      GoDaddy, Namecheap, Google Domains, or similar. You create the account,
+      pay the registrar, then share login or DNS access so we can connect your
+      site. Halite builds static sites, not WordPress—there is no wp-admin. DIY
+      Handoff is included with every build. Walkthrough Handoff adds a live
+      1-hour session. You pick DIY, Walkthrough, or Halite Care on the launch
+      call.
+    waasHeading: Website + hosting on a monthly plan
+    waasNote: Spread the full project over 12 months with a small setup fee.
+      Includes the static site build, hosting, and content updates. You register
+      the domain in your name; we help connect DNS once you share registrar
+      access.
+    waasPlans:
+      - id: waas-mono
+        name: Single-Page Monthly Plan
+        description: Full single-page site with a low setup fee and fixed monthly
+          payment for 12 months. Build, hosting, and updates included.
+        price: $149/mo
+        betaPrice: $149
+        priceSuffix: / month · 12 months
+        setupFee: $250 setup
+        features:
+          - Full single-page site included
+          - Hosting and DNS connection (you register the domain; we connect it)
+          - Small content updates included
+          - 12-month agreement
+          - Zoom kickoff and launch call
+        cta:
+          label: Apply for single-page monthly
+          href: /apply
+      - id: waas-multi
+        name: Multi-Page Monthly Plan
+        description: The full multi-page website on a monthly plan—for businesses that
+          want everything without a large upfront payment.
+        price: $249/mo
+        betaPrice: $249
+        priceSuffix: / month · 12 months
+        setupFee: $500 setup
+        features:
+          - Full multi-page site included
+          - Hosting and DNS connection (you register the domain; we connect it)
+          - Menu, hours, and photo updates included
+          - 12-month agreement
+          - Priority support at launch
+        cta:
+          label: Apply for multi-page monthly
+          href: /apply
+        highlighted: true
+    addonsHeading: Optional add-ons
+    addons:
+      - name: English & Spanish Website
+        price: $200 upfront
+        description: Your key pages in both English and Spanish—a strong fit for El
+          Paso, southern New Mexico, and borderland customers.
+    testimonialNote: Founding clients who leave an honest Google review receive 10%
+      off their first year of Managed Hosting & Updates.
+    footerCta:
+      label: Schedule a free Zoom call
+      href: /apply
+  contactCta:
+    title: Ready to have a chat?
+    subtitle: Let's talk about your project!
+    body: Tell us where you are today and where you want to be. We'll map a clear
+      path forward—no pressure, no jargon.
+    primaryCta:
+      label: Let's chat
+      href: /apply
+    secondaryCta:
+      label: View our work
+      href: /work
+  applicationForm:
+    eyebrow: Get started
+    title: Let's build your digital foundation.
+    body: We partner with local business owners who respect their digital presence
+      and are ready to grow. Tell us about your project and we'll follow up with
+      a focused discovery call.
+    submitLabel: Send message
+    successTitle: Message ready to send.
+    successBody: Your email client should open with your details. If it did not,
+      email us directly.
+    compact: true
+    delivery: formsubmit
+  founder:
+    eyebrow: Meet the builder
+    title: Hi, I'm the founder.
+    name: Your Name
+    role: Founder, Halite WebDev
+    image: ""
+    imageAlt: Founder portrait
+    paragraphs:
+      - Introduce yourself in plain language. Share why you started the studio
+        and what clients can expect when they work with you directly.
+    highlights:
+      - label: Your city
+      - label: Your specialty
+  legalPages: {}
+  footer:
+    services:
+      - label: Services
+        href: services/index.html
+      - label: Resources
+        href: resources/index.html
+    company:
+      - label: Meet Kathleen
+        href: meet-kathleen/index.html
+      - label: Store
+        href: store/index.html
+      - label: Contact
+        href: contact/index.html
+    legal: []
+    copyright: © {foundedYear}–{currentYear} {legalName}. All rights reserved.
+  templateCatalog:
+    priceLabel: $500
+    previewLabel: Preview
+    items: []
+  pageCopy:
+    services:
+      eyebrow: What we solve
+      title: Real problems local owners face when building a website
+      description: Every card below mirrors a concern we hear on discovery calls.
+        Hover to learn how Halite addresses it—with honest pricing and
+        framework-based speed.
+    work:
+      eyebrow: Portfolio
+      title: Production work we've shipped
+      description: Real applications for real users—built with the same
+        performance-first approach we bring to every client project.
+    process:
+      eyebrow: How we work
+      title: From discovery to launch in three phases
+      description: A clear, deliberate process so you always know what's next and
+        who's accountable.
+    apply:
+      eyebrow: Get started
+      title: Let's chat about your project
+      description: Share a few details, schedule a focused discovery call, then we
+        build. No hard sell—just a straight path forward.
+    pricing:
+      eyebrow: Pricing
+      title: Starting prices
+      description: Clear options with founding beta rates below. We'll confirm the
+        right package on a short call—no surprises.
